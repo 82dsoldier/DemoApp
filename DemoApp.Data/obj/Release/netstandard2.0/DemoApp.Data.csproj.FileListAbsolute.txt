@@ -1,0 +1,8 @@
+C:\Source Code\vs\DemoApp\DemoApp.Data\bin\Release\netstandard2.0\DemoApp.Data.deps.json
+C:\Source Code\vs\DemoApp\DemoApp.Data\bin\Release\netstandard2.0\DemoApp.Data.dll
+C:\Source Code\vs\DemoApp\DemoApp.Data\bin\Release\netstandard2.0\DemoApp.Data.pdb
+C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Release\netstandard2.0\DemoApp.Data.csproj.CoreCompileInputs.cache
+C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Release\netstandard2.0\DemoApp.Data.AssemblyInfoInputs.cache
+C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Release\netstandard2.0\DemoApp.Data.AssemblyInfo.cs
+C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Release\netstandard2.0\DemoApp.Data.dll
+C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Release\netstandard2.0\DemoApp.Data.pdb

@@ -1,0 +1,121 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<div class="col-sm-4">
+    <div class="row">
+        <div class="col-sm-12">Please select a vehicle below and an origin and destination from the map on the right.</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-danger" id="ErrorMessage"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Delivery Name *</label>
+            <div><input type="text" id="DeliveryName" class="form-control" /></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Vehicle *</label>
+            <div><select id="Vehicles" style="width:85%;float:left" class="form-control"></select><a id="AddVehicle" asp-action="AddVehicle" asp-controller="Vehicles" style="margin-left:15px;"><i class="fa fa-plus"></i></a></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Departure Time *</label>
+            <div><input type="text" id="DepartureTime" class="form-control" /></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Delivery Time</label>
+            <div><input type="text" id="DeliveryTime" class="form-control" readonly /></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Return Time</label>
+            <input type="text" class="form-control" id="ReturnTime" readonly />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Tracking Number</label>
+            <div><input type="text" id="TrackingNumber" class="form-control" readonly /></div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:10px;">
+        <div class="col-sm-12">
+            <button id="SaveButton" class="btn btn-sm btn-primary">Save</button>
+            <button id="ClearButton" class="btn btn-sm btn-danger">Clear</button>
+            <button id="TripsButton" class="btn btn-sm btn-info" title="View deliveries for selected vehicle">Deliveries</button>
+        </div>
+    </div>
+    <p class="row">
+        <div class="col-sm-12">
+            <b>Save</b> to save the current record to the database
+        </div>
+        <div class="col-sm-12">
+            <b>Clear</b> clears the current record and prepares for a new one
+        </div>
+        <div class="col-sm-12">
+            <b>Deliveries</b> lists the deliveries for the selected vehicle in the table on the right
+        </div>
+        <div class="col-sm-12">
+            <b>*</b> marks required fields
+        </div>
+        <br />
+    <p>
+        Click on the links in the origin and destination to focus the map on that location.  The code could also be simply modified to place a marker on the location when selected.
+    </p>
+    <p>
+        At this time, there does not exist functionality to edit a delivery once created.  If save is selected twice, it will create two entries with the same data.
+    </p>
+</div>
+
+<div class="col-sm-8">
+    <div class="col-sm-12">
+        <div class="row">
+            <input id="origin-input" class="controls" type="text"
+                   placeholder="Enter an origin location">
+
+            <input id="destination-input" class="controls" type="text"
+                   placeholder="Enter a destination location">
+
+            <div id="map" style="width:100%;height:500px;"></div>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div>
+            <table style="width:100%" class="table table-bordered table-striped" id="DeliveriesView">
+                <thead>
+                    <tr>
+                        <th>Tracking Number</th>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Departure Time</th>
+                        <th>Delivery Time</th>
+                        <th>Return Time</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    <environment include="Development">
+        <script src="~/js/chosen.jquery.js"></script>
+        <script src="~/js/map.js"></script>
+        <script src="~/js/index.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/chosen.jquery.min.js"></script>
+        <script src="~/js/map.min.js"></script>
+        <script src="~/js/index.min.js"></script>
+    </environment>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmJCe5_m59rQKY2badwPwUdFRtOQ1D2uI&libraries=places&callback=initMap" async defer></script>
+}

@@ -1,0 +1,29 @@
+﻿@model VehicleDto
+@{
+    Layout = "_PopupLayout";
+}
+<div class="container">
+    <h3>Add a Vehicle</h3>
+    <form asp-action="AddVehicle" asp-controller="Vehicles" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <label>Vehicle Name</label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+            </div>
+            <div class="row" style="margin-top:15px;">
+                <input type="submit" class="btn btn-primary" />
+                <button id="Cancel" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
+@section scripts{
+    <environment include="Development">
+        <script src="~/js/popup.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/popup.min.js"></script>
+    </environment>
+}

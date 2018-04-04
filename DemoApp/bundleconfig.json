@@ -1,0 +1,56 @@
+﻿
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/jquery.datetimepicker.min.css",
+    "inputFiles": [
+      "wwwroot/css/jquery.datetimepicker.css"
+    ],
+    "minify": {
+      "enabled": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/index.min.js",
+    "inputFiles": [
+      "wwwroot/js/index.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/map.min.js",
+    "inputFiles": [
+      "wwwroot/js/map.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/popup.min.js",
+    "inputFiles": [
+      "wwwroot/js/popup.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]
