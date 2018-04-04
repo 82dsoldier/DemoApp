@@ -2445,11 +2445,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Source Code\\vs\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj",
+      "projectUniqueName": "C:\\Source Code\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj",
       "projectName": "DemoApp.Data",
-      "projectPath": "C:\\Source Code\\vs\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj",
+      "projectPath": "C:\\Source Code\\repos\\DemoApp\\DemoApp.Data\\DemoApp.Data.csproj",
       "packagesPath": "C:\\Users\\Drew.Burchett\\.nuget\\packages\\",
-      "outputPath": "C:\\Source Code\\vs\\DemoApp\\DemoApp.Data\\obj\\",
+      "outputPath": "C:\\Source Code\\repos\\DemoApp\\DemoApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
