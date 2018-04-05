@@ -12,3 +12,17 @@ C:\Source Code\vs\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.AssemblyInfo.c
 C:\Source Code\vs\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.csproj.CopyComplete
 C:\Source Code\vs\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.dll
 C:\Source Code\vs\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.pdb
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.deps.json
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.runtimeconfig.json
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.runtimeconfig.dev.json
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.dll
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.pdb
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.Data.dll
+C:\Source Code\repos\DemoApp\DemoApp\bin\Debug\netcoreapp2.0\DemoApp.Data.pdb
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.csprojResolveAssemblyReference.cache
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.AssemblyInfoInputs.cache
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.AssemblyInfo.cs
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.csproj.CopyComplete
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.dll
+C:\Source Code\repos\DemoApp\DemoApp\obj\Debug\netcoreapp2.0\DemoApp.pdb

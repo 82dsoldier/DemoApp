@@ -1,7 +1,6 @@
 ﻿using DemoApp.Data.Interfaces;
 using DemoApp.Data.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace DemoApp.Controllers {
 	public class DeliveriesController : Controller {
@@ -18,8 +17,11 @@ namespace DemoApp.Controllers {
 					_dataService.Create(model);
 
 					return Created(Url.Action("Deliveries", "GetDelivery", new { id = model.Id }), model);
-				} catch (Exception e) {
-					//Log the exception
+				} catch {
+					//In a more detailed app, I would catch the exception and check for the exception type
+					//This would allow me to send a more detailed status message back to the client.
+					//Not that it would matter to the client, but some of them are smart enough to send along screen shots
+					//when reporting issues.
 					return StatusCode(500);
 				}
 			}
@@ -33,8 +35,7 @@ namespace DemoApp.Controllers {
 				if (model != null)
 					return Json(model);
 				return StatusCode(404);
-			} catch (Exception e) {
-				//log the exception
+			} catch {
 				return StatusCode(500);
 			}
 		}
@@ -43,8 +44,7 @@ namespace DemoApp.Controllers {
 		public IActionResult GetDeliveriesForVehicle(int vehicleId) {
 			try {
 				return Json(_dataService.GetDeliveriesForVehicle(vehicleId));
-			} catch (Exception e) {
-				//log exception
+			} catch {
 				return StatusCode(500);
 			}
 		}

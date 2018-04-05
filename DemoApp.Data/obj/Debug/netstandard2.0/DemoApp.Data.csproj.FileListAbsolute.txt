@@ -7,3 +7,12 @@ C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.Ass
 C:\Source Code\vs\DemoApp\DemoApp.Data\bin\Debug\netstandard2.0\DemoApp.Data.pdb
 C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.dll
 C:\Source Code\vs\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.pdb
+C:\Source Code\repos\DemoApp\DemoApp.Data\bin\Debug\netstandard2.0\DemoApp.Data.deps.json
+C:\Source Code\repos\DemoApp\DemoApp.Data\bin\Debug\netstandard2.0\DemoApp.Data.dll
+C:\Source Code\repos\DemoApp\DemoApp.Data\bin\Debug\netstandard2.0\DemoApp.Data.pdb
+C:\Source Code\repos\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.csprojResolveAssemblyReference.cache
+C:\Source Code\repos\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.csproj.CoreCompileInputs.cache
+C:\Source Code\repos\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.AssemblyInfoInputs.cache
+C:\Source Code\repos\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.AssemblyInfo.cs
+C:\Source Code\repos\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.dll
+C:\Source Code\repos\DemoApp\DemoApp.Data\obj\Debug\netstandard2.0\DemoApp.Data.pdb

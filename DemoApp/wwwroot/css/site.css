@@ -8,6 +8,34 @@ html, body {
     padding: 0;
 }
 
+/*body {
+    height:100%;
+    overflow:hidden;
+    margin:0px;
+    display:flex;
+    box-sizing:border-box;
+}
+
+.column{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+#left {
+    flex-shrink:0;
+}
+
+.top{
+    flex-shrink:0;
+    display:inline-flex;
+    width:100%;
+}
+
+.bottom {
+    flex-grow:1;
+    overflow-y:auto;
+}*/
 .controls {
     margin-top: 10px;
     border: 1px solid transparent;

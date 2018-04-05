@@ -1,25 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Events;
+using Serilog.Exceptions;
+using Serilog.Formatting.Json;
+using System;
 
-namespace DemoApp
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            BuildWebHost(args).Run();
-        }
+namespace DemoApp {
+	public class Program {
+		public static void Main(string[] args) {
+			Log.Logger = new LoggerConfiguration()
+				.MinimumLevel.Debug()
+				.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+				.Enrich.WithExceptionDetails()
+				.WriteTo.RollingFile(new JsonFormatter(renderMessage: true), @"C:\logs\log-{Date}.log")
+				.CreateLogger();
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
-    }
+			try {
+				BuildWebHost(args).Run();
+			} catch (Exception e) {
+				Log.Fatal(e, "Host terminated unexpectedly");
+			} finally {
+				Log.CloseAndFlush();
+			}
+		}
+
+		public static IWebHost BuildWebHost(string[] args) =>
+			WebHost.CreateDefaultBuilder(args)
+				.UseStartup<Startup>()
+				.UseSerilog()
+				.Build();
+	}
 }
